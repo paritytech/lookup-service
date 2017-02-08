@@ -19,6 +19,7 @@
     "node": ">=6"
   },
   "dependencies": {
+    "@parity/parity.js": "^0.3.72",
     "bignumber.js": "^4.0.0",
     "boom": "^4.2.0",
     "co-express": "^1.2.2",
@@ -27,9 +28,9 @@
     "express": "^4.14.0",
     "fetch-ponyfill": "^3.0.2",
     "hsts": "^2.0.0",
+    "lookup": "github:ethcore/lookup",
     "nocache": "^2.0.0",
-    "spdy": "^3.4.4",
-    "web3": "^0.18.0"
+    "spdy": "^3.4.4"
   },
   "devDependencies": {
     "husky": "^0.12.0",

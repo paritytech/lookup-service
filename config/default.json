@@ -4,7 +4,6 @@
     "cert": "./self-signed.cert.pem",
     "key": "./self-signed.key.pem"
   },
-  "registryAddress": "<Registry.sol address>",
   "parity": {
     "host": "localhost:8545"
   }
