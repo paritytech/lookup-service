@@ -27,10 +27,8 @@
     "corser": "^2.0.1",
     "express": "^4.14.0",
     "fetch-ponyfill": "^3.0.2",
-    "hsts": "^2.0.0",
     "lookup": "github:ethcore/lookup",
-    "nocache": "^2.0.0",
-    "spdy": "^3.4.4"
+    "nocache": "^2.0.0"
   },
   "devDependencies": {
     "husky": "^0.12.0",

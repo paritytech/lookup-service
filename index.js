@@ -1,12 +1,10 @@
 'use strict'
 
 const express = require('express')
-const hsts = require('hsts')
 const corser = require('corser')
 const noCache = require('nocache')()
 const config = require('config')
-const spdy = require('spdy')
-const fs = require('fs')
+const http = require('http')
 
 const nodeIsSynced = require('./lib/node-is-synced')
 const nrOfPeers = require('./lib/nr-of-peers')
@@ -14,8 +12,6 @@ const lookup = require('./lookup')
 
 const api = express()
 module.exports = api
-
-api.use(hsts({maxAge: 3 * 24 * 60 * 60 * 1000})) // 3 days
 
 // CORS
 const allowed = corser.simpleRequestHeaders.concat(['User-Agent'])
@@ -44,10 +40,7 @@ api.use((err, req, res, next) => {
   .json({status: 'error', message: err.message})
 })
 
-spdy.createServer({
-  cert: fs.readFileSync(config.http.cert),
-  key: fs.readFileSync(config.http.key)
-}, api)
+http.createServer(api)
   .listen(config.http.port, (err) => {
     if (err) return console.error(err)
     console.info(`Listening on ${config.http.port}.`)
