@@ -1,8 +1,8 @@
 # [Parity](https://ethcore.io/parity.html) lookup service
 
-**The service is deployed at `https://id.parity.io/` (mainnet) and `https://id.parity.io:8443/` (testnet).**
+**Lookup details on Ethereum addresses**, find them by name, or e-mail. Check out [lookup-service-ui](https://github.com/ethcore/lookup-service-ui) for a GUI.
 
-Also, check out [lookup-service-ui](https://github.com/ethcore/lookup-service-ui) for a GUI.
+The service is free to use at `https://id.parity.io/` (mainnet) and `https://id.parity.io:8443/` (testnet).
 
 [![Join the chat at https://gitter.im/ethcore/parity][gitter-image]][gitter-url] [![GPLv3][license-image]][license-url]
 
@@ -20,7 +20,7 @@ npm install --production
 ```
 
 1. Create a config file `config/<env>.json`, which partially overrides `config/default.json`.
-2. `export NODE_ENV=<env>; node index.js`
+2. `env NODE_ENV=<env> node index.js`
 
 ## API
 
