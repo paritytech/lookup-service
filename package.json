@@ -26,7 +26,7 @@
     "config": "^1.24.0",
     "corser": "^2.0.1",
     "express": "^4.14.0",
-    "fetch-ponyfill": "^4.0.0",
+    "fetch-ponyfill": "^6.0.1",
     "lookup": "github:ethcore/lookup",
     "nocache": "^2.0.0"
   },
