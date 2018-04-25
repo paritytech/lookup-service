@@ -2,8 +2,6 @@
 
 **Lookup details on Ethereum addresses**, find them by name, or e-mail. Check out [lookup-service-ui](https://github.com/ethcore/lookup-service-ui) for a GUI.
 
-The service is free to use at `https://id.parity.io/` (mainnet) and `https://id.parity.io:8443/` (testnet).
-
 [![Join the chat at https://gitter.im/ethcore/parity][gitter-image]][gitter-url] [![GPLv3][license-image]][license-url]
 
 [gitter-image]: https://badges.gitter.im/Join%20Chat.svg
