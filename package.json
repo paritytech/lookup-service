@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@parity/parity.js": "^0.3.72",
-    "bignumber.js": "^4.0.0",
+    "bignumber.js": "^7.1.0",
     "boom": "^4.2.0",
     "co-express": "^1.2.2",
     "config": "^1.24.0",
